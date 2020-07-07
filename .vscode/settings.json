@@ -1,0 +1,52 @@
+{
+	"breadcrumbs.enabled": true,
+	"editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"files.autoSaveDelay": 600,
+	"files.eol": "\n",
+	"files.insertFinalNewline": true,
+	"editor.formatOnSaveTimeout": 750,
+	"editor.formatOnSave": true,
+	"[typescript]": {
+		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.formatOnSave": true
+	},
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.cursorStyle": "line",
+	"workbench.colorTheme": "Community Material Theme Darker",
+	"prettier.endOfLine": "lf",
+	"prettier.semi": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"prettier.singleQuote": true,
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"prettier.useTabs": true,
+	"editor.fontLigatures": true,
+	"editor.suggestSelection": "first",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		{
+			"language": "typescript",
+			"autoFix": true
+		},
+		{
+			"language": "typescriptreact",
+			"autoFix": true
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"aliariff.auto-add-brackets",
+		"CoenraadS.bracket-pair-colorizer",
+		"mikestead.dotenv",
+		"EditorConfig.EditorConfig",
+		"codezombiech.gitignore",
+		"mgmcdermott.vscode-language-babel",
+		"eamodio.gitlens",
+		"wix.vscode-import-cost",
+		"Equinusocio.vsc-material-theme",
+		"PKief.material-icon-theme",
+		"christian-kohler.npm-intellisense",
+		"WallabyJs.quokka-vscode",
+		"dsznajder.es7-react-js-snippets",
+		"christian-kohler.path-intellisense",
+		"Gruntfuggly.todo-tree",
+		"wayou.vscode-todo-highlight",
+		"Zignd.html-css-class-completion",
+		"VisualStudioExptTeam.vscodeintellicode"
+	],
+	"unwantedRecommendations": ["hookyqr.beautify", "dbaeumer.jshint"]
+}

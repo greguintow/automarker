@@ -1,0 +1,81 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint-config-airbnb-base",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/typescript",
+		"prettier",
+		"prettier/@typescript-eslint"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module"
+	},
+	"plugins": ["import", "prettier", "@typescript-eslint"],
+	"settings": {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts"]
+		},
+		"import/resolver": {
+			"typescript": {
+				"alwaysTryTypes": true
+			}
+		}
+	},
+	"rules": {
+		"semi": ["error", "never"],
+		"comma-dangle": ["error", "never"],
+		"arrow-parens": ["error", "as-needed"],
+		"no-underscore-dangle": "off",
+		"import/no-unresolved": "error",
+		"import/extensions": ["error", "never"],
+		"import/no-extraneous-dependencies": "off",
+		"no-unused-vars": "off",
+		"no-extra-parens": "off",
+		"@typescript-eslint/no-extra-parens": ["off"],
+		"no-case-declarations": "off",
+		"import/prefer-default-export": "off",
+		"no-plusplus": [
+			"error",
+			{
+				"allowForLoopAfterthoughts": true
+			}
+		],
+		"no-tabs": [
+			"error",
+			{
+				"allowIndentationTabs": true
+			}
+		],
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"@typescript-eslint/camelcase": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-implicity-any": "off",
+		"@typescript-eslint/no-object-literal-type-assertion": "off",
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/ban-ts-ignore": "off",
+		"@typescript-eslint/interface-name-prefix": "off",
+		"@typescript-eslint/no-use-before-define": "off",
+		"@typescript-eslint/explicit-member-accessibility": "off",
+		"@typescript-eslint/semi": ["error", "never"],
+		"linebreak-style": ["error", "unix"],
+		"prettier/prettier": "error",
+		"quotes": ["error", "single"]
+	}
+}
