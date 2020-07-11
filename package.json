@@ -1,29 +1,77 @@
 {
-	"name": "typescript-config",
-	"version": "1.0.0",
-	"description": "",
-	"author": "Greg Teixeira",
+	"name": "automarker",
+	"main": "index.js",
+	"version": "0.0.1",
+	"description": "A tiny (142 bytes) highlighter",
+	"author": "Greg Teixeira <thunderdance6@gmail.com>",
 	"license": "MIT",
+	"sideEffects": false,
+	"peerDependencies": {
+		"preact": "^10.0.0",
+		"react": "^16.8.0"
+	},
+	"peerDependenciesMeta": {
+		"preact": {
+			"optional": true
+		},
+		"react": {
+			"optional": true
+		}
+	},
 	"scripts": {
 		"start": "nodemon --watch \"src/\" --exec \"ts-node src/index.ts\" -e ts",
-		"dev": "nodemon -r dotenv/config --watch \"src/\" --exec \"sucrase-node src/index.ts\" -e ts",
-		"build:sucrase": "sucrase ./src -d ./dist --transforms typescript,imports"
+		"dev": "nodemon",
+		"size": "size-limit",
+		"test": "jest"
 	},
+	"repository": {
+		"url": "https://github.com/greguintow/automarker"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"size-limit": [
+		{
+			"name": "core",
+			"path": "index.js",
+			"limit": "142 B"
+		},
+		{
+			"name": "core + react hook",
+			"path": "react/index.js",
+			"limit": "183 B",
+			"ignore": [
+				"react"
+			]
+		},
+		{
+			"name": "core + preact hook",
+			"path": "preact/index.js",
+			"limit": "183 B",
+			"ignore": [
+				"preact/hooks"
+			]
+		}
+	],
 	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "^12.6.8",
-		"@typescript-eslint/eslint-plugin": "^2.25.0",
-		"@typescript-eslint/parser": "^2.25.0",
-		"eslint": "^6.8.0",
-		"eslint-config-airbnb-base": "^14.1.0",
-		"eslint-config-prettier": "^6.10.1",
+		"@size-limit/preset-small-lib": "^4.5.3",
+		"@types/jest": "^26.0.4",
+		"@types/node": "^14.0.18",
+		"@typescript-eslint/eslint-plugin": "^3.6.0",
+		"@typescript-eslint/parser": "^3.6.0",
+		"eslint": "^7.4.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
 		"eslint-import-resolver-typescript": "^2.0.0",
-		"eslint-plugin-import": "^2.17.3",
-		"eslint-plugin-prettier": "^3.1.0",
-		"nodemon": "^2.0.2",
-		"prettier": "^2.0.2",
-		"sucrase": "^3.10.1",
-		"ts-node": "^8.8.1",
-		"typescript": "^3.5.2"
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"jest": "^26.1.0",
+		"preact": "^10.4.4",
+		"prettier": "^2.0.5",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"size-limit": "^4.5.3",
+		"typescript": "^3.9.6"
 	}
 }

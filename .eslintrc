@@ -18,13 +18,13 @@
 		"SharedArrayBuffer": "readonly"
 	},
 	"parserOptions": {
-		"ecmaVersion": 2020,
+		"ecmaVersion": 3,
 		"sourceType": "module"
 	},
 	"plugins": ["import", "prettier", "@typescript-eslint"],
 	"settings": {
 		"import/parsers": {
-			"@typescript-eslint/parser": [".ts"]
+			"@typescript-eslint/parser": [".ts", ".js"]
 		},
 		"import/resolver": {
 			"typescript": {
@@ -36,12 +36,16 @@
 		"semi": ["error", "never"],
 		"comma-dangle": ["error", "never"],
 		"arrow-parens": ["error", "as-needed"],
+		// "one-var": "off",
+		"no-var": "off",
 		"no-underscore-dangle": "off",
 		"import/no-unresolved": "error",
 		"import/extensions": ["error", "never"],
 		"import/no-extraneous-dependencies": "off",
+		"object-shorthand": "off",
 		"no-unused-vars": "off",
 		"no-extra-parens": "off",
+		"prefer-const": "off",
 		"@typescript-eslint/no-extra-parens": ["off"],
 		"no-case-declarations": "off",
 		"import/prefer-default-export": "off",

@@ -6,6 +6,7 @@
 	"bracketSpacing": true,
 	"jsxSingleQuote": false,
 	"jsxBracketSameLine": false,
+	"printWidth": 100,
 	"useTabs": true,
 	"trailingComma": "none",
 	"tabWidth": 2,
