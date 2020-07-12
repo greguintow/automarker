@@ -1,7 +1,7 @@
 {
 	"name": "automarker",
 	"main": "index.js",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A tiny (142 bytes) highlighter",
 	"author": "Greg Teixeira <thunderdance6@gmail.com>",
 	"license": "ISC",
