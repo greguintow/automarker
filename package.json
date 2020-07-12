@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"description": "A tiny (142 bytes) highlighter",
 	"author": "Greg Teixeira <thunderdance6@gmail.com>",
-	"license": "MIT",
+	"license": "ISC",
 	"sideEffects": false,
 	"peerDependencies": {
 		"preact": "^10.0.0",
@@ -25,7 +25,8 @@
 		"test": "jest"
 	},
 	"repository": {
-		"url": "https://github.com/greguintow/automarker"
+		"type": "git",
+		"url": "git+https://github.com/greguintow/automarker.git"
 	},
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/"
