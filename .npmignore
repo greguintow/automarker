@@ -1,5 +1,10 @@
 yarn-error.log
 yarn.lock
 .npmrc
+.editorconfig
+.eslintrc
+jest.config.js
+nodemon.json
+.prettierrc
 node_modules/
 test/

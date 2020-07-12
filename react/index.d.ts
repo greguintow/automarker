@@ -5,7 +5,7 @@ interface Highlight {
 
 /**
  * ```jsx
- * import useMarker from 'automarker/react'
+ * import { useMarker } from 'automarker/react'
  *
  * const [text, setText] = useState('peter pepper')
  * const [search, setSearch] = useState('pe')
@@ -20,6 +20,4 @@ interface Highlight {
  * @param str Base String
  * @param search The Search String
  */
-function useMarker(str: string, search: string | RegExp): Highlight[]
-
-export default useMarker
+export function useMarker(str: string, search: string | RegExp): Highlight[]

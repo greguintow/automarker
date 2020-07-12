@@ -25,22 +25,18 @@
 		"test": "jest"
 	},
 	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/greguintow/automarker.git"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
+		"url": "git://github.com/greguintow/automarker.git"
 	},
 	"size-limit": [
 		{
 			"name": "core",
 			"path": "index.js",
-			"limit": "142 B"
+			"limit": "148 B"
 		},
 		{
 			"name": "core + react hook",
 			"path": "react/index.js",
-			"limit": "183 B",
+			"limit": "199 B",
 			"ignore": [
 				"react"
 			]
@@ -48,7 +44,7 @@
 		{
 			"name": "core + preact hook",
 			"path": "preact/index.js",
-			"limit": "183 B",
+			"limit": "199 B",
 			"ignore": [
 				"preact/hooks"
 			]
