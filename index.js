@@ -1,5 +1,6 @@
 exports.takeParts = function (str, search) {
 	let parts = str.split(new RegExp(search, 'ig'))
+	console.log(parts)
 	let cur = ''
 	let result = []
 	let ret
@@ -17,7 +18,7 @@ exports.takeParts = function (str, search) {
 		}
 		cur += ret.text
 		result.push(ret)
-		if (parts[i + 1] && i !== 0) {
+		if (parts[i + 1] && (i !== 0 || parts[0] !== '')) {
 			let text = str.slice(cur.length, cur.length + search.length)
 			cur += text
 			result.push({
