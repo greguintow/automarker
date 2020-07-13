@@ -45,3 +45,18 @@ describe('Test 3', () => {
 		expect(parts).toHaveLength(5)
 	})
 })
+describe('Test 4', () => {
+	const str = 'consulting sales test nest'
+	const search = 's'
+	const parts = takeParts(str, search)
+	it('should have 5 highlights', () => {
+		expect(parts.filter(part => part.highlight)).toHaveLength(5)
+	})
+	it('should be equal original string', () => {
+		const final = parts.reduce((total, b) => total + b.text, '')
+		expect(final).toBe(str)
+	})
+	it('should have length 11', () => {
+		expect(parts).toHaveLength(11)
+	})
+})

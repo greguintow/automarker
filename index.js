@@ -1,6 +1,5 @@
 exports.takeParts = function (str, search) {
 	let parts = str.split(new RegExp(search, 'ig'))
-	console.log(parts)
 	let cur = ''
 	let result = []
 	let ret
