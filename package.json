@@ -3,6 +3,13 @@
 	"main": "index.js",
 	"version": "1.2.1",
 	"description": "A tiny (142 bytes) highlighter",
+	"keywords": [
+		"autosuggest",
+		"highlight",
+		"highlighter",
+		"typeahead",
+		"autocomplete"
+	],
 	"author": "Greg Teixeira <thunderdance6@gmail.com>",
 	"license": "MIT",
 	"sideEffects": false,
@@ -50,7 +57,9 @@
 			]
 		}
 	],
-	"dependencies": {},
+	"dependencies": {
+		"remove-accents": "^0.4.2"
+	},
 	"devDependencies": {
 		"@size-limit/preset-small-lib": "^4.5.3",
 		"@types/jest": "^26.0.4",
