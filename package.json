@@ -38,22 +38,27 @@
 		{
 			"name": "core",
 			"path": "index.js",
-			"limit": "148 B"
+			"limit": "174 B",
+			"ignore": [
+				"remove-accents"
+			]
 		},
 		{
 			"name": "core + react hook",
 			"path": "react/index.js",
-			"limit": "199 B",
+			"limit": "216 B",
 			"ignore": [
-				"react"
+				"react",
+				"remove-accents"
 			]
 		},
 		{
 			"name": "core + preact hook",
 			"path": "preact/index.js",
-			"limit": "199 B",
+			"limit": "216 B",
 			"ignore": [
-				"preact/hooks"
+				"preact/hooks",
+				"remove-accents"
 			]
 		}
 	],
