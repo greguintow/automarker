@@ -48,6 +48,7 @@
 		"prefer-const": "off",
 		"@typescript-eslint/no-extra-parens": ["off"],
 		"no-case-declarations": "off",
+		"prefer-destructuring": "off",
 		"import/prefer-default-export": "off",
 		"no-plusplus": [
 			"error",

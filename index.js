@@ -1,6 +1,6 @@
 let removeAccents = require('remove-accents')
 
-exports.takeParts = function (str, search) {
+module.exports = function (str, search) {
 	let parts = removeAccents(str).split(new RegExp(search, 'ig'))
 	let cur = ''
 	let result = []

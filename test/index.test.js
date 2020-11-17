@@ -1,9 +1,9 @@
-let { takeParts } = require('..')
+let automaker = require('..')
 
 describe('Test', () => {
 	const str = 'legal le LE maneilero'
 	const search = 'le'
-	const parts = takeParts(str, search)
+	const parts = automaker(str, search)
 	it('should have 4 highlights', () => {
 		expect(parts.filter(part => part.highlight)).toHaveLength(4)
 	})
@@ -18,7 +18,7 @@ describe('Test', () => {
 describe('Test 2', () => {
 	const str = 'test'
 	const search = 's'
-	const parts = takeParts(str, search)
+	const parts = automaker(str, search)
 	it('should have 1 highlight', () => {
 		expect(parts.filter(part => part.highlight)).toHaveLength(1)
 	})
@@ -33,7 +33,7 @@ describe('Test 2', () => {
 describe('Test 3', () => {
 	const str = 'Consulting Teste'
 	const search = 's'
-	const parts = takeParts(str, search)
+	const parts = automaker(str, search)
 	it('should have 2 highlights', () => {
 		expect(parts.filter(part => part.highlight)).toHaveLength(2)
 	})
@@ -48,7 +48,7 @@ describe('Test 3', () => {
 describe('Test 4', () => {
 	const str = 'consulting sales test nest'
 	const search = 's'
-	const parts = takeParts(str, search)
+	const parts = automaker(str, search)
 	it('should have 5 highlights', () => {
 		expect(parts.filter(part => part.highlight)).toHaveLength(5)
 	})
@@ -63,7 +63,7 @@ describe('Test 4', () => {
 describe('Test 5', () => {
 	const str = 'business'
 	const search = 's'
-	const parts = takeParts(str, search)
+	const parts = automaker(str, search)
 	it('should have 3 highlights', () => {
 		expect(parts.filter(part => part.highlight)).toHaveLength(3)
 	})
@@ -78,7 +78,7 @@ describe('Test 5', () => {
 describe('Test 6', () => {
 	const str = 'São Paulo'
 	const search = 'sao'
-	const parts = takeParts(str, search)
+	const parts = automaker(str, search)
 	it('should have 1 highlight', () => {
 		expect(parts.filter(part => part.highlight)).toHaveLength(1)
 	})

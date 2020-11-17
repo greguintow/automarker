@@ -1,6 +1,6 @@
-let { useMemo } = require('react')
-let { takeParts } = require('..')
+let useMemo = require('react').useMemo
+let automarker = require('..')
 
-exports.useMarker = function (str, search) {
-	return useMemo(() => takeParts(str, search), [str, search])
+module.exports = function (str, search) {
+	return useMemo(() => automarker(str, search), [str, search])
 }
