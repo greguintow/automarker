@@ -5,7 +5,7 @@ interface Highlight {
 
 /**
  * ```jsx
- * import { useMarker } from 'automarker/react'
+ * import useMarker from 'automarker/react'
  *
  * const [text, setText] = useState('peter pepper')
  * const [search, setSearch] = useState('pe')

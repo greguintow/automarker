@@ -22,4 +22,4 @@ interface Highlight {
  * @param str Base String
  * @param search The Search String
  */
-export function takeParts(str: string, search: string | RegExp): Highlight[]
+export default function (str: string, search: string | RegExp): Highlight[]
