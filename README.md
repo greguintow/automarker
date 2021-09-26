@@ -1,6 +1,6 @@
 # AutoMarker
 
-A tiny text highlighter, an utility to autosuggest
+A tiny text highlighter, an utility to autosuggest. Native solution with regexp
 
 ## Installation
 

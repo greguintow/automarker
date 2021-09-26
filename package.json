@@ -1,7 +1,7 @@
 {
 	"name": "automarker",
 	"main": "index.js",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"description": "A tiny (163 bytes) highlighter",
 	"keywords": [
 		"autosuggest",
