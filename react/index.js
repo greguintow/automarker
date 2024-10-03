@@ -1,6 +1,8 @@
 let useMemo = require('react').useMemo
 let automarker = require('..')
 
-module.exports = function (str, search) {
-	return useMemo(() => automarker(str, search), [str, search])
+function useMarker(str, search) {
+  return useMemo(() => automarker(str, search), [str, search])
 }
+
+exports.useMarker = useMarker

@@ -1,7 +1,7 @@
 {
 	"name": "automarker",
 	"main": "index.js",
-	"version": "1.4.2",
+	"version": "2.0.0",
 	"description": "A tiny (163 bytes) highlighter",
 	"keywords": [
 		"autosuggest",
@@ -64,7 +64,8 @@
 		}
 	],
 	"dependencies": {
-		"remove-accents": "^0.4.2"
+		"escape-string-regexp": "4.0.0",
+		"remove-accents": "^0.5.0"
 	},
 	"devDependencies": {
 		"@size-limit/preset-small-lib": "^4.5.3",
